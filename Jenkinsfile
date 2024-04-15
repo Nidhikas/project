@@ -8,7 +8,7 @@ pipeline {
 		      }}
 		stage('Build') {
 	           steps {
-			  sh '/opt/apache-maven-3.6.3/bin/mvn install'
+			  sh '/opt/apache-maven-3.6.3/mvn install'
 	                 }}
 			stage('Docker build'){
 		    steps {
